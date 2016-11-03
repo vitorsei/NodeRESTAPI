@@ -4,7 +4,7 @@
   "description": "NodeRestAPI",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/vitorsei/NodeRESTAPI#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1"
   }
 }
