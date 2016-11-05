@@ -48,7 +48,6 @@ var routes = function (Book) {
 
         })
         .put(function (req, res) {
-            console.log(req.book);
             req.book.title = req.body.title;
             req.book.author = req.body.author;
             req.book.genre = req.body.genre;
