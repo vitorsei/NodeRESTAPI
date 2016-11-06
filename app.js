@@ -20,9 +20,10 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 bookRouter = require('./Routes/bookRoutes')(Book);
-
+adminRouter = require('./Routes/adminRoutes')(Book);
 
 app.use('/api/books', bookRouter);
+app.use('/api/admin', adminRouter);
 
 
 app.get('/', function (req, res) {
