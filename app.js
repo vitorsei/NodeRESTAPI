@@ -3,7 +3,6 @@ var express = require('express'),
     bodyParser = require('body-parser');
 
 var db;
-console.log('Hello');
 if (process.env.ENV == 'Test') {
     db = mongoose.connect('mongodb://localhost/libraryApp_Test');
 }
